@@ -1,0 +1,12 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/yrprodco/public_html/
+ - /public -R assets $DEPLOYPATH
+ - /public -R css $DEPLOYPATH
+ - /public -R img $DEPLOYPATH
+ - /public -R js $DEPLOYPATH
+ - /public -R vendor $DEPLOYPATH
+ - /public .htaccess $DEPLOYPATH
+ - /public robots.txt $DEPLOYPATH
+ - /public web.config $DEPLOYPATH
