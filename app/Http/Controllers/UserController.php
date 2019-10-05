@@ -22,6 +22,17 @@ class UserController extends Controller
 
         return view('admin.user.create');
     }
+    protected function validator(array $data)
+    {
+        return Validator::make($data, [
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            // 'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'asal_gereja_atau_organisasi' => ['required'],
+            'phone_number' => ['required'],
+            'sesi' => ['required'],
+        ]);
+    }
     public function store(Request $request) {
 
         $user = new User();

@@ -1,0 +1,131 @@
+.section-landing{
+    background: url(../../img/land-img/Background-3.png) top center no-repeat;
+    /* BACKGROUND BAWAH */
+    background-size:cover;
+    box-shadow:inset 0 0 0 2000px rgba(6,0,0,0.4);
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 768px) {
+    .section-landing {
+        background-image: url(../../img/land-img/Background-3.png);
+        height: 1000px;
+        background-size: 100%;
+    }
+}
+
+.section-preregister{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: -webkit-linear-gradient(40deg, #1e0003 0%, #9c1c30 100%);
+}
+
+.logo-front{
+    padding-top: 55px;
+}
+
+.csoon{
+    font-size: 2.2rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.slogan{
+    font-size: 1.3rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.date{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.orange{
+    color: #e46955;
+}
+
+.blue{
+    color: #2e3b91;
+}
+
+.sns-wrap{
+    margin-top: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sns-img {
+    width: 40px;
+    vertical-align: -15px;
+}
+
+.title{
+    text-align: center;
+}
+
+.card-dwpx{
+    background-color: #f9f9fc;
+}
+
+.wrap-form{
+    border-radius: 10px;
+    margin: 5px 5px 50px 5px;
+    padding-bottom: 20px;
+}
+
+.form-title{
+    padding: 20px
+}
+
+.form-button-wrap, .field.is-grouped {
+    justify-content: center;
+}
+
+.button{
+    font-family: 'Foundry Gridnik', sans-serif;
+}
+
+/*----scroll----*/
+.ct-btn-scroll {
+    width: 49px;
+    height: 49px;
+    /*position: absolute;*/
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 500px;
+    z-index: 9;
+    border-radius: 50%;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out;
+}
+/*----scroll end----*/
+
+.footer{
+    border-top: 1px solid #5e4b43;
+    padding: 50px 0px;
+    background-color: #0d051f;
+}
+
+.full-width{
+width: 100%;
+}
+
+.footer-sns{
+    padding-top: 35px;
+    text-align: center;
+}
+
+.footer-sns a{
+    color: #9f8579;
+    font-size: 24px;
+    padding: 0 15px;
+}
+
+.footer-sns a:hover{
+    color: #fff;
+}

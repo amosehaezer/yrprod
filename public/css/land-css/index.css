@@ -1,0 +1,85 @@
+.hero-il{
+	padding-top: 10px
+}
+
+.btn-ismaya {
+    border-top: 2px solid #ab9a92;
+    border-bottom: 2px solid #9f8579;
+    background-image: linear-gradient(to right,#ab9a92,#9f8579),linear-gradient(to right,#ab9a92,#9f8579);
+}
+
+.btn-ismaya.btn-ismaya-fill {
+    background-color: #ab9a92;
+    background-image: linear-gradient(to bottom,#ab9a92,#9f8579);
+}
+
+.page--home .section-hero:after, 
+.page--home .section-lineups:after,
+.page--home .section-playlist:after {
+    background-color: #9f8579;
+    background-image: linear-gradient(to right,#ab9a92,#9f8579);
+    height: 1px;
+}
+
+@media (min-width: 768px){
+    .heading-with-separator:before, .heading-with-separator:after {
+        content: '';
+        width: 100%;
+        height: 4px;
+        background: none;
+        -ms-flex: 1 0 0;
+        flex: 1 0 0;
+    }
+}
+
+.heading-with-separator h1 span, .heading-with-separator h2 span, .heading-with-separator h3 span {
+    border-top: 4px solid #9f8579;
+    border-bottom: 4px solid #9f8579;
+    height: 110px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.heading-with-separator h1:before, .heading-with-separator h2:before, .heading-with-separator h3:before {
+    /* background-image: url(BackGround-1.jpg); */
+}
+
+.heading-with-separator h1:after, .heading-with-separator h2:after, .heading-with-separator h3:after {
+    /* background-image: url(BackGround-1.jpg); */
+}
+
+.ticket {
+    background: url(../../img/land-img/BackGround-1.jpg) top left no-repeat;
+}
+
+.ticket .ticket-type-ribbon {
+    background: url(../../img/land-img/Background-2.jpg) top left no-repeat;
+}
+
+.ticket:hover a, .ticket:focus a {
+    color: #f1ecea;
+}
+
+.ticket-type-desc{
+    padding-bottom: 10px;
+}
+
+.social-links a{
+    font-size: 1.25rem;
+    padding: 15px;
+    color: #9f8579;
+}
+
+.social-links a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.invalid-feedback {
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #ff5969;
+}

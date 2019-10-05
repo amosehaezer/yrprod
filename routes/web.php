@@ -4,7 +4,7 @@ use App\Http\BarcodeController;
 use App\Http\UserController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing');
 });
 // Auth::routes();
 
