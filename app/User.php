@@ -9,7 +9,6 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     use Notifiable;
-
     /**
      * The attributes that are mass assignable.
      *
@@ -39,5 +38,11 @@ class User extends Authenticatable
 
     public function member() {
         return $this->hasOne('App\Member');
+    }
+    public function scopeSearch($query, $q) {
+        if($q == null) return $query;
+        return $query
+                ->where('name', 'LIKE', "%{$q}%")
+                ->orWhere('email', 'LIKE', "%{$q}%");
     }
 }

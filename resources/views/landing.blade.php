@@ -27,22 +27,26 @@
   </head>
   
   <body>
-
-      <div class="content-room">
-        <div class="page page--home">
-          <div class="section section1 section-hero" style="padding-bottom: 160px">
-      <div class="container" style="padding-top: 40px">
-        <p class="hero-il"><img src="{{ asset('img/land-img/Bottom 2.png') }}" alt="A divine experience by Youth Revival Movement" style="width: 30%; height: auto"></p>
-        <div class="mv20" style="padding-top: 30px">
-          <h1 class="text-hide hidden">YRM</h1><img class="logo" src="{{ asset('img/land-img/Divine 10k.png') }}" alt="YRM Logo" style="width: 80%; height: auto">
-        </div>
-        <!--<div class="mv20">   </div>-->
-        <div class="mt20" style="padding-top: 200px">
-          <a href="#tickets" class="btn btn-ismaya">Get Ticket</a>
-        </div>
-
-
-
+    <div class="content-room">
+      <div class="page page--home">
+        <div class="section section1 section-hero" style="padding-bottom: 160px">
+          <div class="container" style="padding-top: 40px">
+            <p class="hero-il">
+              <img src="{{ asset('img/land-img/Bottom 2.png') }}" alt="A divine experience by Youth Revival Movement" style="width: 30%; height: auto">
+            </p>
+        
+            <div class="mv20" style="padding-top: 30px">
+              <h1 class="text-hide hidden">
+                YRM
+              </h1>
+                <img class="logo" src="{{ asset('img/land-img/Divine 10k.png') }}" alt="YRM Logo" style="width: 80%; height: auto">
+            </div>
+            <!--<div class="mv20">   </div>-->
+            <div class="mt20" style="padding-top: 200px">
+              <a href="#tickets" class="btn btn-ismaya">
+                Get Ticket
+              </a>
+            </div>
       </div><!--.container end-->
     </div><!--.section end-->          
     <div class="section section5 section-playlist">

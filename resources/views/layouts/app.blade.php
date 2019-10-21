@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" oncontextmenu="return false">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -83,5 +83,12 @@
             @yield('content')
         </main>
     </div>
+    <script>
+        $(document).keydown(function(e){
+            if(e.which === 123){
+                return false;
+            }
+        });
+    </script>
 </body>
 </html>

@@ -17,4 +17,9 @@ class Member extends Model
     public function user() {
         return $this->belongsTo('App\User');
     }
+    public function scopeSearch($query, $r) {
+        if($r == null) return $query;
+        return $query
+                ->where('asal_gereja_atau_organisasi', 'LIKE', "%{$r}%");
+    }
 }

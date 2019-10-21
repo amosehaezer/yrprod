@@ -56,7 +56,17 @@
                                 </li>
                             @endif
                         @else
-                            <a class="nav-link float-right" href="{{ url('/user') }}">{{ __('Index') }}</a>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  User Management
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="{{ url('/user') }}">View All User</a>
+                                  <a class="dropdown-item disabled" href="{{ url('search-user') }}">Search By Name</a>
+                                  <a class="dropdown-item disabled" href="{{ url('search-category') }}">Search By Church</a>
+                                </div>
+                              </div>
+                            {{-- <a class="nav-link float-right" href="{{ url('/user') }}">{{ __('Index') }}</a> --}}
                             <a class="nav-link float-right" href="{{ url('/user/total') }}">{{ __('Total User') }}</a>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
