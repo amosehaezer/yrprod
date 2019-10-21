@@ -155,19 +155,21 @@ class UserController extends Controller
     public function destroy($id) {
 
         $user = User::find($id);
+        $member = Member::find($id);
         $user->delete();
+        $member->delete();
 
         return redirect('user')->with('success', 'User deleted');
     }
 
     public function totalUser() {
 
-        $count = Member::count();
+        $users = DB::table('users')->count();
         $sesi1 = DB::table('members')->where('sesi', 'LIKE', '%Sesi 1%')->get();
         $sesi2 = DB::table('members')->where('sesi', 'LIKE', '%Sesi 2%')->get();
         $sesi3 = DB::table('members')->where('sesi', 'LIKE', '%Sesi 3%')->get();
         
-        return view('admin.total-user')->with('member', $count)
+        return view('admin.total-user')->with('member', $users)
                                 ->with('sesi1', $sesi1)
                                 ->with('sesi2', $sesi2)
                                 ->with('sesi3', $sesi3);
