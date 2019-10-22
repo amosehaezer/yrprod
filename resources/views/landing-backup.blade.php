@@ -89,6 +89,12 @@
                   <p></p>
                   <p><em>*Ordered tickets cannot be cancelled.</em></p>
                   <p><em>*1 ticket is valid for 1 person only.</em></p>
+                  <!-- <p><strong>AGE RESTRICTIONS</strong></p>
+                    <ul>
+                    <li>This event is open for those strictly aged 18+ only.</li>
+                    <li>Guests must show valid photo ID (National Identification Card or KTP/Driving License/Passport/Student ID) to enter the festival.</li>
+                    <li>Guests without valid photo ID will be denied admission without refund.</li>
+                  </ul> -->
                   <p><strong>GENERAL POLICIES</strong></p>
                   <ul>
                     <li>After completing the order, barcode will be sent via email.</li>
@@ -105,6 +111,12 @@
                   <p></p>
                   <p><em>*Tiket yang sudah dipesan tidak bisa dibatalkan.</em></p>
                   <p><em>*1 tiket berlaku hanya untuk 1 orang.</em></p>
+                  <!-- <p><strong>KETENTUAN UMUR</strong></p>
+                  <ul>
+                    <li>Acara ini khusus untuk penonton yang berusia minimal 18 tahun.</li>
+                    <li>Penonton diharuskan untuk menunjukan kartu identitas (KTP/SIM/Paspor/Kartu Pelajar)</li>
+                    <li>Penonton tanpa kartu identitas yang sah tidak akan diperbolehkan masuk ke dalam festival dan tidak akan mendapatkan uang tiket kembali.</li>
+                  </ul> -->
                   <p><strong>PERATURAN UMUM</strong></p>
                   <ul>
                     <li>Setelah selesai melakukan proses order tiket, barcode akan di kirimkan melalui email.</li>
@@ -115,8 +127,7 @@
                   <!-- <p><strong>KEAMANAN</strong></p>
                   <p>Seluruh pengunjung, termasuk media akan diperiksa sebelum memasuki area acara. Dengan memasuki area acara, seluruh pengunjung berarti ber-sedia untuk diperiksa secara menyeluruh seperti hal-nya pemeriksaan di bandara, termasuk mengosongkan kantong dan tas, dan memeriksa seluruh barang-barang yang dibawa. Detektor narkoba elektronik dan K-9 akan digunakan. Penyelenggara acara mempunyai hak untuk menolak atau mengeluarkan orang dari area acara, apabila orang tersebut melanggar per-aturan yang telah dibuat. Peraturan tersebut dapat berubah sewaktu-waktu, dengan ataupun tanpa pemberitahuan.</p>
                   <p><strong>HAK PEREKAMAN</strong></p>
-                  <p>Ismaya Live dan afiliasinya/asosiasinya berhak untuk mem-filmkan, merekam dan/atau memotret wajah atau gambar ataupun yang menyerupainya, gerakan dan/atau pernyataan para pengunjung, penonton, atau pemegang wristband dari acara ini untuk televisi, gambar bergerak (film), webcast, dan/atau penyiaran publik lainnya dalam bentuk apapun dan untuk kepentingan apapun. Setiap pengunjung, penonton dan/atau pemegang wristband dari acara ini, dengan ini melepaskan Ismaya Live (termasuk pegawai dan anak perusahaannya) dan afiliasi/asosiasinya dari segala hak, klaim, kerugian, kehilangan, pertanggungjawaban, denda dan akibat-akibat lainnya yang muncul secara langsung maupun tidak dari memfilmkan, perekaman, dan/atau pemotretan dari acara ini.</p> -->
-                </div>
+                  <p>Ismaya Live dan afiliasinya/asosiasinya berhak untuk mem-filmkan, merekam dan/atau memotret wajah atau gambar ataupun yang menyerupainya, gerakan dan/atau pernyataan para pengunjung, penonton, atau pemegang wristband dari acara ini untuk televisi, gambar bergerak (film), webcast, dan/atau penyiaran publik lainnya dalam bentuk apapun dan untuk kepentingan apapun. Setiap pengunjung, penonton dan/atau pemegang wristband dari acara ini, dengan ini melepaskan Ismaya Live (termasuk pegawai dan anak perusahaannya) dan afiliasi/asosiasinya dari segala hak, klaim, kerugian, kehilangan, pertanggungjawaban, denda dan akibat-akibat lainnya yang muncul secara langsung maupun tidak dari memfilmkan, perekaman, dan/atau pemotretan dari acara ini.</p> -->               </div>
               </div>
             </div>
 
@@ -165,9 +176,11 @@
       </div>
 
       <footer class="footer">
-      {{-- <div class="social-links">
-            <a href="https://www.instagram.com/yrmovement/"><i class="wtficon wtficon-instagram"></i></a>
-      </div> --}}
+      <div class="social-links">
+            <!-- <a href="https://www.facebook.com/DjakartaWarehouseProject"><i class="wtficon wtficon-facebook"></i></a>
+            <a href="https://www.twitter.com/dwpfest/"><i class="wtficon wtficon-twitter"></i></a>
+            <a href="https://www.instagram.com/yrmovement/"><i class="wtficon wtficon-instagram"></i></a> -->
+      </div>
       <div class="row">
         <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
           <!--A festival experience by <-->
