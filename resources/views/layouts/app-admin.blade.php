@@ -62,8 +62,8 @@
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                   <a class="dropdown-item" href="{{ url('/user') }}">View All User</a>
-                                  <a class="dropdown-item disabled" href="{{ url('search-user') }}">Search By Name</a>
-                                  <a class="dropdown-item disabled" href="{{ url('search-category') }}">Search By Church</a>
+                                  <a class="dropdown-item disabled" href="#">Search By Name</a>
+                                  <a class="dropdown-item disabled" href="#">Search By Church</a>
                                 </div>
                               </div>
                             {{-- <a class="nav-link float-right" href="{{ url('/user') }}">{{ __('Index') }}</a> --}}
@@ -95,5 +95,15 @@
             @yield('content')
         </main>
     </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148731849-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-148731849-1');
+        </script>
+
 </body>
 </html>
