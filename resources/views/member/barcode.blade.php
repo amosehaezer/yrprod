@@ -12,6 +12,10 @@
     
         <input id="text" type="text" disabled value="{!! $barcode->code_registration !!}" hidden><br />
         <div id="qrcode"><br /></div>
+        <br />
+         <input id="text" type="text" disabled value="{!! $barcode->name !!}"><br /> 
+         <input id="text" type="text" disabled value="{!! $barcode->member->asal_gereja_atau_organisasi !!}"><br /> 
+
         <script type="text/javascript">
             var qrcode = new QRCode("qrcode");
             function makeCode () {      

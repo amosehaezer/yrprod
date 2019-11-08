@@ -25,6 +25,48 @@ class UserController extends Controller
         return view('admin.user.index', compact('users'));
     }
 
+    public function doorprize() {
+        $users = count(User::all());
+        $random = rand(1,$users);
+
+        $hasilrandom = User::where('id', '=', $random)->get();
+        // return $hasilrandom->toJson();
+        return view('admin.doorprize', compact('hasilrandom'));
+    }
+
+    // public function 
+    
+    // public function viewOnsite() {
+    //     return view('onsite.register-onsite');
+    // }
+
+    // public function storeOnsite(Request $request) {
+    //     $rules = [
+    //         'name' => 'required',
+    //         'asal_gereja_atau_organisasi' => 'required'
+    //     ];
+    //     $this->validate($request, $rules);
+
+    //     $user = new User();
+        
+    //     $user->name = $request->name;
+    //     $user->email = $request->input('email', '-');
+    //     $user->password = Hash::make("yrmovement");
+    //     $user->code_registration = Str::random(5);
+        
+    //     $user->save();
+    //     $member = new Member();
+
+    //         $member->user_id = $user->id;
+
+    //         $member->asal_gereja_atau_organisasi = $request->asal_gereja_atau_organisasi;
+    //         $member->phone_number = $request->input('phone_number', '-');
+    //         $member->sesi = $request->input('sesi', '-');
+
+    //     $member->save();
+    //     return view('register-onsite', ['success' => 'Success Input User']);
+    // }
+
     // public function searchChurch(Request $request) {
     //     $search = $request->searchchurch;
     //     $users = DB::table('users')
@@ -55,32 +97,6 @@ class UserController extends Controller
         
     //     return view('admin.user.searchUser', compact('users', 'orderBy', 'sortBy', 'q', 'perPage'));
     // }
-
-    // public function searchCategory(Request $request) {
-
-    //     $sortBy = 'id';
-    //     $orderBy = 'desc';
-    //     $perPage = 15;
-    //     $q = null;
-
-    //     if($request->has('orderBy')) $orderBy = $request->query('orderBy');
-    //     if($request->has('sortBy')) $sortBy = $request->query('sortBy');
-    //     if($request->has('perPage')) $perPage = $request->query('perPage');
-    //     if($request->has('q')) $q = $request->query('q');
-
-        // $users = DB::table('users')
-        //             ->join('members', 'users.id', '=', 'members.user_id')
-        //             ->paginate();
-        // $users = DB::table('users')
-            // ->leftJoin('members', 'users.id', '=', 'members.id')
-            // ->get();
-
-        // $users = User::paginate(10);
-    //     $users = Member::search($q)->orderBy($sortBy, $orderBy)->paginate($perPage);
-
-    //     return view('admin.user.searchCategory', compact('users', 'orderBy', 'sortBy', 'q', 'perPage'));
-    // }
-
     public function create() {
 
         return view('admin.user.create');
@@ -123,13 +139,6 @@ class UserController extends Controller
         return redirect('/user');
     }
 
-    // public function edit($id) {
-
-        // $user = User::find($id)->get();
-        
-        // return view('admin.edit-user', ['user' => $user]);
-    // }
-
     public function edit($id) {
         $user  = User::find($id);
         // $member = user()->member;
@@ -144,11 +153,15 @@ class UserController extends Controller
         ]);
     
         $user = User::find($id);
+        $member = Member::find($id);
+
         $user->name = $request->nama;
-        // $user->member->asal_gereja_atau_organisasi = $request->asal_gereja_atau_organisasi;
         $user->email = $request->email;
-        // $user->member->phone_number = $request->phone_number;
+        $member->asal_gereja_atau_organisasi = $request->asal_gereja_atau_organisasi;
+        $member->phone_number = $request->phone_number;
+
         $user->save();
+        $member->save();
         return redirect('/user');
     }
 

@@ -33,6 +33,11 @@ Route::group(['middleware' => ['web', 'auth']], function() {
 });
 Route::get('/user/json', 'UserController@fetchjson');
 Route::get('barcode/{id}', 'BarcodeController@show')->middleware('auth');
+Route::get('/doorprize', 'UserController@doorprize')->middleware('cors', 'auth');
+
+Route::get('/regis/menu', 'RegistrationController@menu');
+Route::get('/regis/onsite', 'RegistrationController@viewOnsite');
+Route::post('/onsite', 'RegistrationController@storeOnsite');
 
 // Route::get('/barcode{id}', function() {
 //     return abort(404);

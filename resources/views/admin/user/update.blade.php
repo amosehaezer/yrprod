@@ -2,11 +2,12 @@
 
 @section('content')
 
-<div class="card">
-<div class="card-body">
-
+<div class="container">
+    
+    <div class="card">
+        <div class="card-body">
+            
     <form method="POST" action="/user/edit/{{ $user->id }}">
-        
         {{ csrf_field() }}
         {{ method_field('PUT') }}
         
@@ -20,7 +21,7 @@
             @endif
         </div>
 
-        {{-- <div class="form-group">
+        <div class="form-group">
             <label>Asal Gereja / Organisasi</label>
             <input type="text" name="asal_gereja_atau_organisasi" class="form-control" placeholder="Asal Gereja / Organisasi .." value=" {{ $user->member->asal_gereja_atau_organisasi }}">
             @if($errors->has('asal_gereja_atau_organisasi'))
@@ -28,7 +29,7 @@
                 {{ $errors->first('asal_gereja_atau_organisasi')}}
             </div>
             @endif
-        </div> --}}
+        </div>
 
         <div class="form-group">
             <label>Email Address</label>
@@ -39,8 +40,8 @@
             </div>
             @endif
         </div>
-
-        {{-- <div class="form-group">
+        
+        <div class="form-group">
             <label>Phone Number</label>
             <input type="text" name="phone_number" class="form-control" placeholder="Phone Number .." value=" {{ $user->member->phone_number }}">
             @if($errors->has('phone_number'))
@@ -48,16 +49,15 @@
                 {{ $errors->first('phone_number')}}
             </div>
             @endif
-        </div> --}}
+        </div>
         
         
         
         <div class="form-group">
-        <input type="submit" class="btn btn-success" value="Save">
-    </div>
-    
-</form>
-
+            <input type="submit" class="btn btn-success" onclick="return confirm('Are you sure?')" value="Save">
+        </div>
+    </form>
+</div>
 </div>
 </div>
 

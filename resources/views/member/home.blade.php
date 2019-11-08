@@ -18,7 +18,7 @@
                         @endif
                         {{-- <h2>{!! Auth::user()->code_registration !!}</h2> --}}
                         {{-- <br /> --}}
-                        Halo, {{ Auth::user()->name }}. Terima kasih sudah mendaftar. <br />
+                        <b>Halo, {{ Auth::user()->name }}.</b> Terima kasih sudah mendaftar. <br />
                         Tekan tombol Home untuk kembali ke halaman Youth Revival Movement.<br /><br />
                         <input id="text" type="text" disabled value="{!! Auth::user()->code_registration !!}" hidden><br />
                         <div id="qrcode"><br /></div>

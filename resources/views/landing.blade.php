@@ -46,6 +46,9 @@
               <a href="#tickets" class="btn btn-ismaya">
                 Get Ticket
               </a>
+              <a href="{{ route('login') }}" class="btn btn-ismaya">
+                Check Barcode
+              </a>
             </div>
       </div><!--.container end-->
     </div><!--.section end-->          
